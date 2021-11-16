@@ -241,7 +241,7 @@ Let’s follow the “setup” path to the `on_setup` code.
         Approve(),
     )
 ```
-This code verifies that the start time has not passed and uses a smart contract transaction to opt the smart contract into the NFT that will be auctioned. It is important to note that this transaction will be grouped with two other transactions - one payment transaction to fund the smart contract with a algos to cover minimum balance requirements and transaction fees, the application transaction that triggers the setup, and an asset transfer transaction that will move the NFT from the seller’s account to the smart contract.
+This code verifies that the start time has not passed and uses a smart contract transaction to opt the smart contract into the NFT that will be auctioned. It is important to note that this transaction will be grouped with two other transactions - one payment transaction to fund the smart contract with a small amount of algos to cover minimum balance requirements and transaction fees, the application transaction that triggers the setup, and an asset transfer transaction that will move the NFT from the seller’s account to the smart contract.
 
 ## Bid in the auction
 Back to the auction! Let’s now check out the `on_bid` scenario which will be evaluated if a user supplied “bid” with a `NoOp` application transaction. 
